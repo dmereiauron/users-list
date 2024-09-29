@@ -18,7 +18,6 @@ document.addEventListener('DOMContentLoaded', () => {
       userList.filterCards(searchText);
     }
 
-    console.log(searchText);
   });
 
   searchForm.addEventListener('reset', (event) => {
