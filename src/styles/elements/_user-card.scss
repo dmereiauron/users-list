@@ -1,0 +1,63 @@
+.user-card {
+  background-color: #f9f9f9;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+  max-width: 320px;
+  min-width: 320px;
+}
+
+.user-card__id {
+  font-size: 14px;
+  color: #555;
+}
+
+.user-card__name {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.user-card__username,
+.user-card__email,
+.user-card__address,
+.user-card__phone,
+.user-card__website,
+.user-card__company {
+  font-size: 14px;
+  color: #333;
+  margin: 5px 0;
+}
+
+.user-card__website-link,
+.user-card__phone-number {
+  color: rgba(0, 0, 0);
+  &:hover {
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+  }
+}
+
+@media (max-width: 600px) {
+  .user-card {
+    padding: 15px;
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .user-card__name {
+    font-size: 18px;
+  }
+
+  .user-card__id,
+  .user-card__username,
+  .user-card__email,
+  .user-card__address,
+  .user-card__phone,
+  .user-card__website,
+  .user-card__company {
+    font-size: 12px;
+  }
+}
